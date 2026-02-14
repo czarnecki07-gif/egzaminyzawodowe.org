@@ -1,0 +1,5 @@
+{
+  "INF.02.": { "payUrl": "https://twoj-link-do-platnosci/inf02", "group": "Informatyka" },
+  "INF.03.": { "payUrl": "https://twoj-link-do-platnosci/inf03", "group": "Informatyka" },
+  "AUD.01.": { "payUrl": "https://twoj-link-do-platnosci/aud01", "group": "Audiowizualne" }
+}

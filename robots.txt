@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://egzaminyzawodowe.org/sitemap.xml

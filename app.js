@@ -1,9 +1,8 @@
 /* app.js — egzaminyzawodowe.org
    Działa z:
-   - exams.json: [{ symbol, name, ... }, ...]
-   - courses.json: { "AUD.01.": { payUrl, group, ... }, ... }  (albo array — też obsłuży)
-   Wymaga w index.html elementów:
-   #q, #group, #sort, #count, #grid
+   - exams.json: lista obiektów, gdzie symbol/nazwa mogą mieć różne klucze (symbol/Symbol/code/Kod itd.)
+   - courses.json: object mapa (klucz=symbol) lub lista
+   Wymaga w HTML: #q, #group, #sort, #count, #grid
 */
 
 (() => {
@@ -23,13 +22,6 @@
     return;
   }
 
-  const state = {
-    exams: [],
-    coursesBySymbol: new Map(),
-    groups: new Set(),
-    filtered: [],
-  };
-
   const safe = (v) => (v ?? '').toString().trim();
   const norm = (v) => safe(v).toLowerCase();
 
@@ -42,10 +34,34 @@
       .replaceAll("'", '&#039;');
   }
 
+  function normalizeSymbol(sym) {
+    return safe(sym).toUpperCase();
+  }
+
+  function getAny(obj, candidates) {
+    if (!obj || typeof obj !== 'object') return '';
+    // 1) dokładne trafienie
+    for (const k of candidates) {
+      if (k in obj && safe(obj[k])) return safe(obj[k]);
+    }
+    // 2) case-insensitive
+    const lowerMap = new Map(Object.keys(obj).map(k => [k.toLowerCase(), k]));
+    for (const k of candidates) {
+      const real = lowerMap.get(k.toLowerCase());
+      if (real && safe(obj[real])) return safe(obj[real]);
+    }
+    return '';
+  }
+
   function guessGroupFromSymbol(symbol) {
-    const s = safe(symbol).toUpperCase();
-    const m = s.match(/^([A-Z]{2,4})\./);
-    return m ? m[1] : 'INNE';
+    const s = normalizeSymbol(symbol);
+    // INF.02 -> INF
+    let m = s.match(/^([A-Z]{2,6})\./);
+    if (m) return m[1];
+    // gdy nie ma kropki: INF02 -> INF
+    m = s.match(/^([A-Z]{2,6})/);
+    if (m) return m[1];
+    return 'INNE';
   }
 
   async function loadJson(path) {
@@ -54,11 +70,12 @@
     return await res.json();
   }
 
-  function normalizeSymbol(sym) {
-    // Zostawiamy kropki jak w plikach (np. AUD.01.)
-    // Żeby działało 1:1 z kluczami courses.json
-    return safe(sym).toUpperCase();
-  }
+  const state = {
+    exams: [],
+    coursesBySymbol: new Map(),
+    groups: new Set(),
+    filtered: [],
+  };
 
   function buildGroupSelect(groups) {
     const current = groupEl.value || 'all';
@@ -83,19 +100,11 @@
     let out = state.exams.slice();
 
     if (selectedGroup !== 'all') {
-      out = out.filter((e) => {
-        const symbol = normalizeSymbol(e.symbol || e.code);
-        const g = e.group ? safe(e.group) : guessGroupFromSymbol(symbol);
-        return g === selectedGroup;
-      });
+      out = out.filter((e) => (e.group || guessGroupFromSymbol(e.symbol)) === selectedGroup);
     }
 
     if (q) {
-      out = out.filter((e) => {
-        const symbol = norm(e.symbol || e.code);
-        const name = norm(e.name);
-        return symbol.includes(q) || name.includes(q);
-      });
+      out = out.filter((e) => norm(e.symbol).includes(q) || norm(e.name).includes(q));
     }
 
     const sortBy = safe(sortEl.value);
@@ -103,11 +112,7 @@
       if (sortBy === 'name') {
         return safe(a.name).localeCompare(safe(b.name), 'pl', { sensitivity: 'base' });
       }
-      return normalizeSymbol(a.symbol || a.code).localeCompare(
-        normalizeSymbol(b.symbol || b.code),
-        'pl',
-        { sensitivity: 'base' }
-      );
+      return safe(a.symbol).localeCompare(safe(b.symbol), 'pl', { sensitivity: 'base' });
     });
 
     state.filtered = out;
@@ -115,21 +120,20 @@
 
   function render() {
     const items = state.filtered;
+
     countEl.textContent = String(items.length);
     gridEl.innerHTML = '';
 
     const frag = document.createDocumentFragment();
 
     for (const ex of items) {
-      const symbol = normalizeSymbol(ex.symbol || ex.code);
+      const symbol = normalizeSymbol(ex.symbol);
       const name = safe(ex.name);
+      const group = ex.group || guessGroupFromSymbol(symbol);
 
       const course = state.coursesBySymbol.get(symbol);
 
-      // priorytet linków:
-      // 1) courseUrl (jeśli kiedyś dodasz)
-      // 2) payUrl / payment_url
-      // 3) fallback: egzamin.html?symbol=...
+      // 1) kurs (gdy już będzie), 2) płatność, 3) fallback pod SEO
       const href =
         course?.courseUrl ||
         course?.course_url ||
@@ -137,25 +141,18 @@
         course?.payment_url ||
         `egzamin.html?symbol=${encodeURIComponent(symbol)}`;
 
-      const group =
-        safe(ex.group) ||
-        safe(course?.group) ||
-        guessGroupFromSymbol(symbol);
-
       const a = document.createElement('a');
       a.className = 'btn-card';
       a.href = href;
-
-      // jeśli to płatność, daj nofollow (na razie OK)
       if (course?.payUrl || course?.payment_url) a.setAttribute('rel', 'nofollow');
 
       a.innerHTML = `
         <div class="btn-card-top">
           <span class="badge">${escapeHtml(group)}</span>
         </div>
-        <div class="btn-card-code">${escapeHtml(symbol)}</div>
-        <div class="btn-card-name">${escapeHtml(name)}</div>
-        <div class="btn-card-cta">Otwórz →</div>
+        <div class="btn-card-code">${escapeHtml(symbol || '—')}</div>
+        <div class="btn-card-name">${escapeHtml(name || '—')}</div>
+        <div class="btn-card-cta">Zobacz →</div>
       `;
 
       frag.appendChild(a);
@@ -192,35 +189,36 @@
         loadJson('./courses.json'),
       ]);
 
-      // exams.json: może być array albo {exams:[...]}
-      const exams = Array.isArray(examsRaw) ? examsRaw : (examsRaw?.exams || []);
-      state.exams = exams.map((e) => ({
-        symbol: normalizeSymbol(e.symbol || e.code || e.exam_code),
-        name: safe(e.name || e.title || e.exam_name),
-        group: safe(e.group),
-      })).filter(e => e.symbol && e.name);
+      // exams.json może być array albo {exams:[...]}
+      const examsArr = Array.isArray(examsRaw) ? examsRaw : (examsRaw?.exams || []);
+      state.exams = examsArr.map((e) => {
+        const symbol = normalizeSymbol(getAny(e, [
+          'symbol', 'Symbol', 'code', 'Code', 'kod', 'Kod', 'kwalifikacja', 'Kwalifikacja'
+        ]));
+        const name = safe(getAny(e, [
+          'name', 'Name', 'nazwa', 'Nazwa', 'title', 'Title', 'opis', 'Opis'
+        ]));
+        const group = safe(getAny(e, ['group', 'Group', 'branża', 'Branża', 'branza', 'Branza'])) || guessGroupFromSymbol(symbol);
+        return { symbol, name, group };
+      }).filter(x => x.symbol && x.name);
 
-      // courses.json: może być object (mapa) lub array
+      // courses.json: object mapa (klucz=symbol) lub lista
       state.coursesBySymbol.clear();
       if (Array.isArray(coursesRaw)) {
         for (const c of coursesRaw) {
-          const sym = normalizeSymbol(c.exam_code || c.symbol || c.code);
-          if (!sym) continue;
-          state.coursesBySymbol.set(sym, c);
+          const sym = normalizeSymbol(getAny(c, ['exam_code','symbol','code','kod','kwalifikacja']));
+          if (sym) state.coursesBySymbol.set(sym, c);
         }
       } else if (coursesRaw && typeof coursesRaw === 'object') {
-        for (const [symRaw, c] of Object.entries(coursesRaw)) {
-          const sym = normalizeSymbol(symRaw);
-          state.coursesBySymbol.set(sym, c);
+        for (const [k, v] of Object.entries(coursesRaw)) {
+          const sym = normalizeSymbol(k);
+          state.coursesBySymbol.set(sym, v);
         }
       }
 
-      // grupy
+      // grupy do selecta
       state.groups.clear();
-      for (const ex of state.exams) {
-        const g = ex.group || guessGroupFromSymbol(ex.symbol);
-        state.groups.add(g);
-      }
+      for (const ex of state.exams) state.groups.add(ex.group || guessGroupFromSymbol(ex.symbol));
 
       buildGroupSelect(state.groups);
       compute();
@@ -231,8 +229,8 @@
       sortEl.addEventListener('change', () => { compute(); render(); });
 
     } catch (e) {
-      showError(e?.message || 'Nieznany błąd.');
       console.error(e);
+      showError(e?.message || 'Nieznany błąd.');
     }
   }
 

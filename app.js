@@ -1,176 +1,116 @@
-// app.js — działa od razu z plikami: exams.json + courses.json (w tym samym katalogu co index.html)
+/* app.js — egzaminyzawodowe.org
+   Wymaga plików obok: exams.json, courses.json
+*/
 
-(async function () {
-  const $ = (id) => document.getElementById(id);
+(async () => {
+  const $ = (sel) => document.querySelector(sel);
 
-  // Wymagane elementy z index.html
-  const grid = $("grid");
-  const q = $("q");
-  const groupSel = $("group");
-  const sortSel = $("sort");
-  const count = $("count");
-  const year = $("year");
+  // Dostosuj te ID jeśli w index.html masz inne
+  const listEl = $('#examsList');
+  const searchEl = $('#examsSearch');   // input type="search"
+  const filterEl = $('#examsFilter');   // select (opcjonalnie)
+  const countEl = $('#examsCount');     // (opcjonalnie) span
 
-  if (year) year.textContent = String(new Date().getFullYear());
-
-  function escapeHtml(str) {
-    return String(str)
-      .replaceAll("&", "&amp;")
-      .replaceAll("<", "&lt;")
-      .replaceAll(">", "&gt;")
-      .replaceAll('"', "&quot;")
-      .replaceAll("'", "&#039;");
-  }
-
-  function normalize(s) {
-    return (s || "").toString().toLowerCase().trim();
-  }
-
-  async function fetchJson(url) {
-    const res = await fetch(url, { cache: "no-store" });
-    if (!res.ok) throw new Error(`Nie udało się pobrać ${url} (HTTP ${res.status})`);
-    return res.json();
-  }
-
-  // Wczytanie danych
-  let exams = [];
-  let courses = {};
-
-  try {
-    [exams, courses] = await Promise.all([
-      fetchJson("exams.json"),
-      fetchJson("courses.json"),
-    ]);
-  } catch (err) {
-    console.error(err);
-    if (grid) {
-      grid.innerHTML = `
-        <div class="card">
-          <div class="name">Błąd ładowania danych</div>
-          <div class="meta">
-            Upewnij się, że pliki <b>exams.json</b> i <b>courses.json</b> są obok <b>index.html</b>
-            oraz że strona jest uruchomiona przez serwer (nie jako plik lokalny).
-          </div>
-        </div>
-      `;
-    }
-    if (count) count.textContent = "0";
+  if (!listEl) {
+    console.warn('Brak #examsList w index.html — nie mam gdzie wyrenderować listy.');
     return;
   }
 
-  // Bezpieczne ujednolicenie struktury
-  exams = Array.isArray(exams) ? exams : [];
-  courses = (courses && typeof courses === "object") ? courses : {};
-
-  // Uzupełnij dropdown grup
-  (function buildGroups() {
-    if (!groupSel) return;
-
-    const groups = new Set();
-    for (const e of exams) {
-      const sym = e?.symbol;
-      const g = sym && courses[sym] ? courses[sym].group : null;
-      if (g) groups.add(String(g));
-    }
-
-    // wyczyść poza pierwszą opcją ("all") jeśli ktoś coś dopisał
-    while (groupSel.options.length > 1) groupSel.remove(1);
-
-    [...groups].sort((a, b) => a.localeCompare(b, "pl")).forEach((g) => {
-      const opt = document.createElement("option");
-      opt.value = g;
-      opt.textContent = g;
-      groupSel.appendChild(opt);
-    });
-  })();
-
-  function getPayUrl(symbol) {
-    const entry = courses[symbol];
-    if (!entry) return "";
-    const url = entry.payUrl || entry.payURL || entry.url || "";
-    return String(url || "").trim();
+  async function loadJson(path) {
+    const res = await fetch(path, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`Nie mogę pobrać ${path} (HTTP ${res.status})`);
+    return await res.json();
   }
 
-  function getGroup(symbol) {
-    const entry = courses[symbol];
-    const g = entry?.group;
-    return g ? String(g) : "";
+  function safe(s) {
+    return (s ?? '').toString().trim();
   }
 
-  function render() {
-    if (!grid) return;
+  function normalize(s) {
+    return safe(s).toLowerCase();
+  }
 
-    const query = normalize(q?.value);
-    const group = groupSel?.value || "all";
-    const sort = sortSel?.value || "symbol";
+  let exams = [];
+  let courses = [];
 
-    let list = exams
-      .filter((e) => e && e.symbol && e.name)
-      .map((e) => ({ symbol: String(e.symbol).trim(), name: String(e.name).trim() }));
+  try {
+    [exams, courses] = await Promise.all([
+      loadJson('./exams.json'),
+      loadJson('./courses.json'),
+    ]);
+  } catch (e) {
+    listEl.innerHTML = `<div class="note"><strong>Błąd:</strong> ${safe(e.message)}</div>`;
+    return;
+  }
 
-    // filtr wyszukiwania
-    if (query) {
-      list = list.filter((e) => {
-        return normalize(e.symbol).includes(query) || normalize(e.name).includes(query);
-      });
-    }
+  // Map kursów po kodzie egzaminu
+  const courseByCode = new Map();
+  for (const c of courses) {
+    const code = safe(c.exam_code).toUpperCase();
+    if (code) courseByCode.set(code, c);
+  }
 
-    // filtr grupy
-    if (group !== "all") {
-      list = list.filter((e) => getGroup(e.symbol) === group);
-    }
+  function render(items) {
+    listEl.innerHTML = '';
 
-    // sortowanie
-    list.sort((a, b) => {
-      if (sort === "name") return a.name.localeCompare(b.name, "pl");
-      return a.symbol.localeCompare(b.symbol, "pl");
-    });
+    for (const ex of items) {
+      const code = safe(ex.code).toUpperCase();
+      const name = safe(ex.name);
+      const desc = safe(ex.description);
 
-    if (count) count.textContent = `${list.length} kwalifikacji`;
+      const course = courseByCode.get(code);
+      const price = course?.price_pln != null ? `${course.price_pln} PLN` : '';
+      const badge = course ? 'kurs dostępny' : 'wkrótce';
 
-    // render kafelków
-    grid.innerHTML = "";
-    for (const e of list) {
-      const payUrl = getPayUrl(e.symbol);
-      const g = getGroup(e.symbol);
+      const a = document.createElement('a');
+      a.className = 'card card-link';
+      a.href = `egzamin.html?code=${encodeURIComponent(code)}`;
 
-      const card = document.createElement("div");
-      card.className = "card";
-
-      const btn = document.createElement("button");
-      btn.className = "btn";
-      btn.type = "button";
-
-      btn.innerHTML = `
-        <div>
-          <div class="symbol">${escapeHtml(e.symbol)}</div>
-          <div class="name">${escapeHtml(e.name)}</div>
-          <div class="meta">
-            ${g ? `Grupa: ${escapeHtml(g)}` : "Grupa: —"}
-            • Płatność: ${payUrl ? "dostępna" : "brak"}
-          </div>
+      a.innerHTML = `
+        <div class="card-icon">📘</div>
+        <h3>${code} — ${name}</h3>
+        <p>${desc || 'Przygotowanie do egzaminu zawodowego.'}</p>
+        <div class="meta-row" style="margin-top:10px;">
+          <span class="pill">${badge}</span>
+          ${price ? `<span class="pill">${price}</span>` : ``}
         </div>
-        <div class="right">→</div>
+        <span class="card-cta">Otwórz →</span>
       `;
 
-      btn.addEventListener("click", () => {
-        if (!payUrl) {
-          alert("Dla tej kwalifikacji nie ma jeszcze podpiętej płatności.");
-          return;
-        }
-        window.location.href = payUrl;
-      });
-
-      card.appendChild(btn);
-      grid.appendChild(card);
+      listEl.appendChild(a);
     }
+
+    if (countEl) countEl.textContent = `${items.length}`;
   }
 
-  // Obsługa zdarzeń
-  q?.addEventListener("input", render);
-  groupSel?.addEventListener("change", render);
-  sortSel?.addEventListener("change", render);
+  function applyFilters() {
+    const q = normalize(searchEl?.value);
+    const f = normalize(filterEl?.value);
 
-  // Start
-  render();
+    let out = exams.slice();
+
+    if (q) {
+      out = out.filter(e => {
+        const code = normalize(e.code);
+        const name = normalize(e.name);
+        return code.includes(q) || name.includes(q);
+      });
+    }
+
+    // opcjonalny filtr (np. "tylko z kursem")
+    if (f === 'withCourse') {
+      out = out.filter(e => courseByCode.has(safe(e.code).toUpperCase()));
+    } else if (f === 'withoutCourse') {
+      out = out.filter(e => !courseByCode.has(safe(e.code).toUpperCase()));
+    }
+
+    render(out);
+  }
+
+  // start
+  render(exams);
+
+  // events
+  searchEl?.addEventListener('input', applyFilters);
+  filterEl?.addEventListener('change', applyFilters);
 })();

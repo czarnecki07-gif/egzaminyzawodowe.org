@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Egzaminy Zawodowe — kursy</title>
+  <meta name="description" content="Wybierz kwalifikację (symbol i nazwa) i przejdź do płatności za kurs online." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1>egzaminyzawodowe.org</h1>
+      <p class="muted">Wybierz kwalifikację, przejdź do płatności i uzyskaj dostęp do kursu.</p>
+
+      <div class="toolbar">
+        <input id="q" type="search" placeholder="Szukaj po symbolu lub nazwie… np. INF.02, logist, fryzj…" />
+        <select id="group">
+          <option value="all">Wszystkie branże</option>
+        </select>
+        <select id="sort">
+          <option value="symbol">Sortuj: symbol</option>
+          <option value="name">Sortuj: nazwa</option>
+        </select>
+      </div>
+
+      <div class="stats">
+        <span class="pill" id="count">0</span>
+        <span class="pill">Kliknij przycisk → płatność</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="grid" class="grid"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="container muted">
+      © <span id="year"></span> egzaminyzawodowe.org
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <!-- Te meta będą nadpisane JS-em pod konkretny egzamin -->
+  <title>Egzamin zawodowy — kurs online</title>
+  <meta name="description" content="Kurs online do egzaminu zawodowego. Materiały, testy i przygotowanie krok po kroku." />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html#top" aria-label="egzaminyzawodowe.org — strona główna">
+        <div class="brand-text">
+          <span class="brand-name">egzaminyzawodowe.org</span>
+          <span class="brand-tagline">Kursy online do egzaminów zawodowych</span>
+        </div>
+      </a>
+
+      <nav class="site-nav" aria-label="Nawigacja">
+        <a href="index.html#egzaminy">Egzaminy</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h1 id="examH1">Ładowanie…</h1>
+            <p class="muted" id="examLead">Pobieram dane egzaminu.</p>
+          </div>
+          <a class="btn btn-ghost" href="index.html#egzaminy">← Wróć do listy</a>
+        </div>
+
+        <div class="cards-grid cards-2">
+          <article class="card">
+            <h3>Opis</h3>
+            <p class="muted" id="examDesc">—</p>
+
+            <div class="note" id="examMeta" style="margin-top:12px;">
+              <strong>Symbol:</strong> <span id="examCode">—</span>
+            </div>
+
+            <div class="panel-actions" style="margin-top:14px;">
+              <a class="btn btn-primary btn-full" id="buyBtn" href="#" rel="nofollow">Przejdź do kursu</a>
+              <a class="btn btn-ghost btn-full" id="allBtn" href="index.html#egzaminy">Zobacz wszystkie egzaminy</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Najczęstsze pytania</h3>
+
+            <details class="faq" open>
+              <summary id="faq1q">Jak przygotować się do egzaminu?</summary>
+              <p id="faq1a" class="muted">Najlepiej działa plan: teoria → zadania → testy → powtórki. Kurs prowadzi krok po kroku.</p>
+            </details>
+
+            <details class="faq">
+              <summary id="faq2q">Czy kurs jest dostępny online 24/7?</summary>
+              <p id="faq2a" class="muted">Tak — dostęp online, uczysz się kiedy chcesz.</p>
+            </details>
+
+            <details class="faq">
+              <summary id="faq3q">Ile trwa dostęp do kursu?</summary>
+              <p id="faq3a" class="muted">Standardowo 365 dni (możesz to zmienić później w systemie).</p>
+            </details>
+
+            <div class="note" style="margin-top:12px;">
+              <strong>Tip:</strong> Jeśli szukasz testów i zadań do <span id="inlineCode">—</span>,
+              wybierz kurs i przerób cały materiał + próbne egzaminy.
+            </div>
+          </article>
+        </div>
+
+        <section class="section" style="padding-top:16px;">
+          <div class="container" style="padding:0;">
+            <div class="card">
+              <h3>Inne popularne egzaminy</h3>
+              <p class="muted">Linkowanie wewnętrzne pomaga SEO i użytkownikom.</p>
+              <div class="tags" id="popularLinks"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" style="padding-top:0;">
+          <div class="container" style="padding:0;">
+            <div class="note" id="errBox" style="display:none;">
+              <strong>Błąd:</strong> <span id="errMsg"></span>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>egzaminyzawodowe.org</strong>
+        <p class="muted small">Kursy online do egzaminów zawodowych</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html#egzaminy">Egzaminy</a>
+        <a href="index.html#kontakt">Kontakt</a>
+      </div>
+      <div class="muted small">© <span id="year"></span></div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function getParam(name) {
+      const url = new URL(window.location.href);
+      return url.searchParams.get(name);
+    }
+
+    function safeText(s) {
+      return (s ?? "").toString().trim();
+    }
+
+    function setMeta({ title, description, canonical }) {
+      document.title = title;
+
+      const desc = document.querySelector('meta[name="description"]');
+      if (desc) desc.setAttribute('content', description);
+
+      // canonical
+      let link = document.querySelector('link[rel="canonical"]');
+      if (!link) {
+        link = document.createElement('link');
+        link.setAttribute('rel', 'canonical');
+        document.head.appendChild(link);
+      }
+      link.setAttribute('href', canonical);
+    }
+
+    function addJsonLd(obj) {
+      const s = document.createElement('script');
+      s.type = 'application/ld+json';
+      s.textContent = JSON.stringify(obj);
+      document.head.appendChild(s);
+    }
+
+    function showError(msg) {
+      const box = document.getElementById('errBox');
+      const t = document.getElementById('errMsg');
+      t.textContent = msg;
+      box.style.display = 'block';
+    }
+
+    async function loadJson(path) {
+      const res = await fetch(path, { cache: 'no-store' });
+      if (!res.ok) throw new Error(`Nie mogę pobrać ${path} (HTTP ${res.status})`);
+      return await res.json();
+    }
+
+    function pickPopular(exams, currentCode) {
+      // prosto: weź pierwsze 12 różnych od bieżącego
+      return exams
+        .filter(e => e.code !== currentCode)
+        .slice(0, 12);
+    }
+
+    (async () => {
+      const codeRaw = safeText(getParam('code'));
+      const code = codeRaw.toUpperCase();
+
+      if (!code) {
+        showError('Brak parametru ?code= (np. egzamin.html?code=INF.03)');
+        document.getElementById('examH1').textContent = 'Nie wybrano egzaminu';
+        document.getElementById('examLead').textContent = 'Wróć do listy i wybierz egzamin.';
+        return;
+      }
+
+      try {
+        const [exams, courses] = await Promise.all([
+          loadJson('./exams.json'),
+          loadJson('./courses.json'),
+        ]);
+
+        const exam = exams.find(e => safeText(e.code).toUpperCase() === code);
+        if (!exam) {
+          document.getElementById('examH1').textContent = `Egzamin ${code}`;
+          document.getElementById('examLead').textContent = 'Nie znaleziono egzaminu w bazie.';
+          document.getElementById('examCode').textContent = code;
+          document.getElementById('inlineCode').textContent = code;
+          showError('Nie znaleziono tego symbolu w exams.json.');
+          return;
+        }
+
+        const examName = safeText(exam.name);
+        const examDesc = safeText(exam.description) || `Przygotowanie do egzaminu zawodowego ${code}.`;
+        const canonical = `${window.location.origin}${window.location.pathname}?code=${encodeURIComponent(code)}`;
+
+        // dopasuj kurs
+        const course = courses.find(c => safeText(c.exam_code).toUpperCase() === code);
+        const buyUrl = course?.payment_url || '#';
+
+        // UI
+        document.getElementById('examH1').textContent = `${code} — ${examName}`;
+        document.getElementById('examLead').textContent = `Kurs online do egzaminu ${code}.`;
+        document.getElementById('examDesc').textContent = examDesc;
+        document.getElementById('examCode').textContent = code;
+        document.getElementById('inlineCode').textContent = code;
+
+        const buyBtn = document.getElementById('buyBtn');
+        buyBtn.href = buyUrl;
+        buyBtn.textContent = course?.cta_label ? safeText(course.cta_label) : 'Przejdź do kursu';
+
+        // SEO meta
+        const title = `${code} ${examName} — kurs online, testy i przygotowanie | egzaminyzawodowe.org`;
+        const description = `Kurs online do ${code} (${examName}). Materiały, zadania i testy. Dostęp 365 dni.`;
+        setMeta({ title, description, canonical });
+
+        // FAQ tekst pod konkretny kod
+        document.getElementById('faq1q').textContent = `Jak przygotować się do egzaminu ${code}?`;
+        document.getElementById('faq1a').textContent = `Przerób teorię i zadania dla ${code}, potem zrób testy próbne. Kurs prowadzi krok po kroku.`;
+        document.getElementById('faq2q').textContent = `Czy kurs ${code} działa na telefonie?`;
+        document.getElementById('faq2a').textContent = `Tak. Kurs działa w przeglądarce na komputerze i telefonie.`;
+        document.getElementById('faq3q').textContent = `Na ile dni dostaję dostęp do kursu ${code}?`;
+        document.getElementById('faq3a').textContent = `Standardowo 365 dni (możliwe będzie też ustawienie indywidualne).`;
+
+        // JSON-LD (SEO)
+        addJsonLd({
+          "@context": "https://schema.org",
+          "@type": "Course",
+          "name": `${code} — ${examName} (kurs online)`,
+          "description": description,
+          "provider": {
+            "@type": "Organization",
+            "name": "egzaminyzawodowe.org",
+            "url": window.location.origin
+          }
+        });
+
+        addJsonLd({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": `Jak przygotować się do egzaminu ${code}?`,
+              "acceptedAnswer": { "@type": "Answer", "text": `Przerób teorię i zadania dla ${code}, potem zrób testy próbne. Kurs prowadzi krok po kroku.` }
+            },
+            {
+              "@type": "Question",
+              "name": `Czy kurs ${code} działa na telefonie?`,
+              "acceptedAnswer": { "@type": "Answer", "text": `Tak. Kurs działa w przeglądarce na komputerze i telefonie.` }
+            },
+            {
+              "@type": "Question",
+              "name": `Na ile dni dostaję dostęp do kursu ${code}?`,
+              "acceptedAnswer": { "@type": "Answer", "text": `Standardowo 365 dni (możliwe będzie też ustawienie indywidualne).` }
+            }
+          ]
+        });
+
+        // linkowanie wewnętrzne
+        const popular = pickPopular(exams, code);
+        const wrap = document.getElementById('popularLinks');
+        wrap.innerHTML = '';
+        for (const e of popular) {
+          const c = safeText(e.code);
+          const a = document.createElement('a');
+          a.className = 'pill';
+          a.href = `egzamin.html?code=${encodeURIComponent(c)}`;
+          a.textContent = c;
+          wrap.appendChild(a);
+        }
+
+      } catch (err) {
+        document.getElementById('examH1').textContent = `Egzamin ${code}`;
+        document.getElementById('examLead').textContent = 'Błąd wczytywania danych.';
+        document.getElementById('examCode').textContent = code;
+        document.getElementById('inlineCode').textContent = code;
+        showError(err?.message || 'Nieznany błąd.');
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,5 +1,1086 @@
 {
-  "INF.02.": { "payUrl": "https://twoj-link-do-platnosci/inf02", "group": "Informatyka" },
-  "INF.03.": { "payUrl": "https://twoj-link-do-platnosci/inf03", "group": "Informatyka" },
-  "AUD.01.": { "payUrl": "https://twoj-link-do-platnosci/aud01", "group": "Audiowizualne" }
+  "AUD.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/AUD-01",
+    "group": "AUD"
+  },
+  "AUD.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/AUD-02",
+    "group": "AUD"
+  },
+  "AUD.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/AUD-03",
+    "group": "AUD"
+  },
+  "AUD.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/AUD-04",
+    "group": "AUD"
+  },
+  "AUD.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/AUD-05",
+    "group": "AUD"
+  },
+  "AUD.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/AUD-06",
+    "group": "AUD"
+  },
+  "AUD.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/AUD-07",
+    "group": "AUD"
+  },
+  "AUD.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/AUD-08",
+    "group": "AUD"
+  },
+  "AUD.09.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/AUD-09",
+    "group": "AUD"
+  },
+  "AUD.10.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/AUD-10",
+    "group": "AUD"
+  },
+  "AUD.11.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/AUD-11",
+    "group": "AUD"
+  },
+  "BPO.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BPO-01",
+    "group": "BPO"
+  },
+  "BPO.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BPO-02",
+    "group": "BPO"
+  },
+  "BPO.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BPO-03",
+    "group": "BPO"
+  },
+  "BPO.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BPO-04",
+    "group": "BPO"
+  },
+  "BUD.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-01",
+    "group": "BUD"
+  },
+  "BUD.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-02",
+    "group": "BUD"
+  },
+  "BUD.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-03",
+    "group": "BUD"
+  },
+  "BUD.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-04",
+    "group": "BUD"
+  },
+  "BUD.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-05",
+    "group": "BUD"
+  },
+  "BUD.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-06",
+    "group": "BUD"
+  },
+  "BUD.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-07",
+    "group": "BUD"
+  },
+  "BUD.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-08",
+    "group": "BUD"
+  },
+  "BUD.09.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-09",
+    "group": "BUD"
+  },
+  "BUD.10.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-10",
+    "group": "BUD"
+  },
+  "BUD.11.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-11",
+    "group": "BUD"
+  },
+  "BUD.12.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-12",
+    "group": "BUD"
+  },
+  "BUD.13.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-13",
+    "group": "BUD"
+  },
+  "BUD.14.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-14",
+    "group": "BUD"
+  },
+  "BUD.15.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-15",
+    "group": "BUD"
+  },
+  "BUD.18.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-18",
+    "group": "BUD"
+  },
+  "BUD.19.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-19",
+    "group": "BUD"
+  },
+  "BUD.20.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-20",
+    "group": "BUD"
+  },
+  "BUD.21.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-21",
+    "group": "BUD"
+  },
+  "BUD.22.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-22",
+    "group": "BUD"
+  },
+  "BUD.23.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-23",
+    "group": "BUD"
+  },
+  "BUD.24.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-24",
+    "group": "BUD"
+  },
+  "BUD.25.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-25",
+    "group": "BUD"
+  },
+  "BUD.26.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-26",
+    "group": "BUD"
+  },
+  "BUD.27.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-27",
+    "group": "BUD"
+  },
+  "BUD.28.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-28",
+    "group": "BUD"
+  },
+  "BUD.29.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-29",
+    "group": "BUD"
+  },
+  "BUD.30.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-30",
+    "group": "BUD"
+  },
+  "BUD.31.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-31",
+    "group": "BUD"
+  },
+  "BUD.32.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-32",
+    "group": "BUD"
+  },
+  "BUD.33.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-33",
+    "group": "BUD"
+  },
+  "BUD.34.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-34",
+    "group": "BUD"
+  },
+  "BUD.36.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/BUD-36",
+    "group": "BUD"
+  },
+  "CES.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/CES-01",
+    "group": "CES"
+  },
+  "CES.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/CES-02",
+    "group": "CES"
+  },
+  "CES.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/CES-03",
+    "group": "CES"
+  },
+  "CES.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/CES-04",
+    "group": "CES"
+  },
+  "CES.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/CES-05",
+    "group": "CES"
+  },
+  "CHM.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/CHM-01",
+    "group": "CHM"
+  },
+  "CHM.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/CHM-02",
+    "group": "CHM"
+  },
+  "CHM.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/CHM-03",
+    "group": "CHM"
+  },
+  "CHM.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/CHM-04",
+    "group": "CHM"
+  },
+  "CHM.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/CHM-05",
+    "group": "CHM"
+  },
+  "CHM.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/CHM-06",
+    "group": "CHM"
+  },
+  "CHM.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/CHM-07",
+    "group": "CHM"
+  },
+  "CHM.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/CHM-08",
+    "group": "CHM"
+  },
+  "DRM.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/DRM-01",
+    "group": "DRM"
+  },
+  "DRM.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/DRM-03",
+    "group": "DRM"
+  },
+  "DRM.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/DRM-04",
+    "group": "DRM"
+  },
+  "DRM.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/DRM-05",
+    "group": "DRM"
+  },
+  "DRM.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/DRM-06",
+    "group": "DRM"
+  },
+  "DRM.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/DRM-07",
+    "group": "DRM"
+  },
+  "DRM.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/DRM-08",
+    "group": "DRM"
+  },
+  "DRM.09.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/DRM-09",
+    "group": "DRM"
+  },
+  "DRM.10.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/DRM-10",
+    "group": "DRM"
+  },
+  "EKA.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/EKA-01",
+    "group": "EKA"
+  },
+  "EKA.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/EKA-02",
+    "group": "EKA"
+  },
+  "EKA.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/EKA-03",
+    "group": "EKA"
+  },
+  "EKA.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/EKA-04",
+    "group": "EKA"
+  },
+  "EKA.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/EKA-05",
+    "group": "EKA"
+  },
+  "EKA.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/EKA-06",
+    "group": "EKA"
+  },
+  "EKA.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/EKA-07",
+    "group": "EKA"
+  },
+  "EKA.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/EKA-08",
+    "group": "EKA"
+  },
+  "EKA.09.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/EKA-09",
+    "group": "EKA"
+  },
+  "ELE.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELE-01",
+    "group": "ELE"
+  },
+  "ELE.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELE-02",
+    "group": "ELE"
+  },
+  "ELE.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELE-03",
+    "group": "ELE"
+  },
+  "ELE.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELE-04",
+    "group": "ELE"
+  },
+  "ELE.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELE-05",
+    "group": "ELE"
+  },
+  "ELE.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELE-06",
+    "group": "ELE"
+  },
+  "ELE.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELE-07",
+    "group": "ELE"
+  },
+  "ELE.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELE-08",
+    "group": "ELE"
+  },
+  "ELE.09.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELE-09",
+    "group": "ELE"
+  },
+  "ELE.10.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELE-10",
+    "group": "ELE"
+  },
+  "ELE.11.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELE-11",
+    "group": "ELE"
+  },
+  "ELM.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELM-01",
+    "group": "ELM"
+  },
+  "ELM.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELM-02",
+    "group": "ELM"
+  },
+  "ELM.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELM-03",
+    "group": "ELM"
+  },
+  "ELM.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELM-04",
+    "group": "ELM"
+  },
+  "ELM.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELM-05",
+    "group": "ELM"
+  },
+  "ELM.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELM-06",
+    "group": "ELM"
+  },
+  "ELM.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ELM-07",
+    "group": "ELM"
+  },
+  "EML.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/EML-08",
+    "group": "EML"
+  },
+  "FRK.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/FRK-01",
+    "group": "FRK"
+  },
+  "FRK.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/FRK-02",
+    "group": "FRK"
+  },
+  "FRK.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/FRK-03",
+    "group": "FRK"
+  },
+  "FRK.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/FRK-04",
+    "group": "FRK"
+  },
+  "FRK.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/FRK-05",
+    "group": "FRK"
+  },
+  "GIW.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/GIW-01",
+    "group": "GIW"
+  },
+  "GIW.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/GIW-02",
+    "group": "GIW"
+  },
+  "GIW.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/GIW-03",
+    "group": "GIW"
+  },
+  "GIW.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/GIW-04",
+    "group": "GIW"
+  },
+  "GIW.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/GIW-05",
+    "group": "GIW"
+  },
+  "GIW.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/GIW-06",
+    "group": "GIW"
+  },
+  "GIW.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/GIW-07",
+    "group": "GIW"
+  },
+  "GIW.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/GIW-08",
+    "group": "GIW"
+  },
+  "GIW.09.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/GIW-09",
+    "group": "GIW"
+  },
+  "GIW.10.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/GIW-10",
+    "group": "GIW"
+  },
+  "GIW.11.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/GIW-11",
+    "group": "GIW"
+  },
+  "GIW.12.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/GIW-12",
+    "group": "GIW"
+  },
+  "GIW.13.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/GIW-13",
+    "group": "GIW"
+  },
+  "HAN.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/HAN-01",
+    "group": "HAN"
+  },
+  "HAN.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/HAN-02",
+    "group": "HAN"
+  },
+  "HAN.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/HAN-03",
+    "group": "HAN"
+  },
+  "HGT.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/HGT-01",
+    "group": "HGT"
+  },
+  "HGT.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/HGT-02",
+    "group": "HGT"
+  },
+  "HGT.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/HGT-03",
+    "group": "HGT"
+  },
+  "HGT.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/HGT-04",
+    "group": "HGT"
+  },
+  "HGT.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/HGT-05",
+    "group": "HGT"
+  },
+  "HGT.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/HGT-06",
+    "group": "HGT"
+  },
+  "HGT.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/HGT-07",
+    "group": "HGT"
+  },
+  "HGT.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/HGT-08",
+    "group": "HGT"
+  },
+  "HGT.09.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/HGT-09",
+    "group": "HGT"
+  },
+  "HGT.10.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/HGT-10",
+    "group": "HGT"
+  },
+  "HGT.11.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/HGT-11",
+    "group": "HGT"
+  },
+  "HGT.12.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/HGT-12",
+    "group": "HGT"
+  },
+  "INF.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/INF-01",
+    "group": "INF"
+  },
+  "INF.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/INF-02",
+    "group": "INF"
+  },
+  "INF.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/INF-03",
+    "group": "INF"
+  },
+  "INF.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/INF-04",
+    "group": "INF"
+  },
+  "INF.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/INF-05",
+    "group": "INF"
+  },
+  "INF.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/INF-06",
+    "group": "INF"
+  },
+  "INF.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/INF-07",
+    "group": "INF"
+  },
+  "INF.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/INF-08",
+    "group": "INF"
+  },
+  "INF.09.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/INF-09",
+    "group": "INF"
+  },
+  "INF.10.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/INF-10",
+    "group": "INF"
+  },
+  "LES.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/LES-01",
+    "group": "LES"
+  },
+  "LES.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/LES-02",
+    "group": "LES"
+  },
+  "MEC.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MEC-01",
+    "group": "MEC"
+  },
+  "MEC.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MEC-02",
+    "group": "MEC"
+  },
+  "MEC.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MEC-03",
+    "group": "MEC"
+  },
+  "MEC.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MEC-04",
+    "group": "MEC"
+  },
+  "MEC.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MEC-05",
+    "group": "MEC"
+  },
+  "MEC.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MEC-06",
+    "group": "MEC"
+  },
+  "MEC.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MEC-07",
+    "group": "MEC"
+  },
+  "MEC.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MEC-08",
+    "group": "MEC"
+  },
+  "MEC.09.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MEC-09",
+    "group": "MEC"
+  },
+  "MEC.10.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MEC-10",
+    "group": "MEC"
+  },
+  "MED.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MED-01",
+    "group": "MED"
+  },
+  "MED.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MED-02",
+    "group": "MED"
+  },
+  "MED.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MED-04",
+    "group": "MED"
+  },
+  "MED.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MED-05",
+    "group": "MED"
+  },
+  "MED.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MED-06",
+    "group": "MED"
+  },
+  "MED.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MED-07",
+    "group": "MED"
+  },
+  "MED.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MED-08",
+    "group": "MED"
+  },
+  "MED.09.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MED-09",
+    "group": "MED"
+  },
+  "MED.10.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MED-10",
+    "group": "MED"
+  },
+  "MED.11.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MED-11",
+    "group": "MED"
+  },
+  "MED.12.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MED-12",
+    "group": "MED"
+  },
+  "MED.13.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MED-13",
+    "group": "MED"
+  },
+  "MED.14.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MED-14",
+    "group": "MED"
+  },
+  "MEP.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MEP-01",
+    "group": "MEP"
+  },
+  "MEP.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MEP-02",
+    "group": "MEP"
+  },
+  "MEP.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MEP-03",
+    "group": "MEP"
+  },
+  "MEP.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MEP-04",
+    "group": "MEP"
+  },
+  "MEP.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MEP-05",
+    "group": "MEP"
+  },
+  "MOD.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOD-01",
+    "group": "MOD"
+  },
+  "MOD.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOD-02",
+    "group": "MOD"
+  },
+  "MOD.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOD-03",
+    "group": "MOD"
+  },
+  "MOD.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOD-04",
+    "group": "MOD"
+  },
+  "MOD.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOD-05",
+    "group": "MOD"
+  },
+  "MOD.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOD-06",
+    "group": "MOD"
+  },
+  "MOD.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOD-07",
+    "group": "MOD"
+  },
+  "MOD.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOD-08",
+    "group": "MOD"
+  },
+  "MOD.09.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOD-09",
+    "group": "MOD"
+  },
+  "MOD.10.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOD-10",
+    "group": "MOD"
+  },
+  "MOD.11.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOD-11",
+    "group": "MOD"
+  },
+  "MOD.12.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOD-12",
+    "group": "MOD"
+  },
+  "MOD.13.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOD-13",
+    "group": "MOD"
+  },
+  "MOD.14.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOD-14",
+    "group": "MOD"
+  },
+  "MOD.15.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOD-15",
+    "group": "MOD"
+  },
+  "MOT.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOT-01",
+    "group": "MOT"
+  },
+  "MOT.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOT-02",
+    "group": "MOT"
+  },
+  "MOT.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOT-03",
+    "group": "MOT"
+  },
+  "MOT.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOT-04",
+    "group": "MOT"
+  },
+  "MOT.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOT-05",
+    "group": "MOT"
+  },
+  "MOT.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOT-06",
+    "group": "MOT"
+  },
+  "MOT.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MOT-07",
+    "group": "MOT"
+  },
+  "MTL.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MTL-01",
+    "group": "MTL"
+  },
+  "MTL.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MTL-02",
+    "group": "MTL"
+  },
+  "MTL.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MTL-03",
+    "group": "MTL"
+  },
+  "MTL.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MTL-04",
+    "group": "MTL"
+  },
+  "MTL.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/MTL-05",
+    "group": "MTL"
+  },
+  "OGR.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/OGR-01",
+    "group": "OGR"
+  },
+  "OGR.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/OGR-02",
+    "group": "OGR"
+  },
+  "OGR.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/OGR-03",
+    "group": "OGR"
+  },
+  "OGR.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/OGR-04",
+    "group": "OGR"
+  },
+  "OGR.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/OGR-05",
+    "group": "OGR"
+  },
+  "PGF.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/PGF-01",
+    "group": "PGF"
+  },
+  "PGF.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/PGF-02",
+    "group": "PGF"
+  },
+  "PGF.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/PGF-03",
+    "group": "PGF"
+  },
+  "PGF.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/PGF-04",
+    "group": "PGF"
+  },
+  "PGF.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/PGF-05",
+    "group": "PGF"
+  },
+  "PGF.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/PGF-06",
+    "group": "PGF"
+  },
+  "PGF.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/PGF-07",
+    "group": "PGF"
+  },
+  "PGF.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/PGF-08",
+    "group": "PGF"
+  },
+  "PGF.09.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/PGF-09",
+    "group": "PGF"
+  },
+  "ROL.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ROL-01",
+    "group": "ROL"
+  },
+  "ROL.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ROL-02",
+    "group": "ROL"
+  },
+  "ROL.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ROL-03",
+    "group": "ROL"
+  },
+  "ROL.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ROL-04",
+    "group": "ROL"
+  },
+  "ROL.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ROL-05",
+    "group": "ROL"
+  },
+  "ROL.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ROL-06",
+    "group": "ROL"
+  },
+  "ROL.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ROL-07",
+    "group": "ROL"
+  },
+  "ROL.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ROL-08",
+    "group": "ROL"
+  },
+  "ROL.09.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ROL-09",
+    "group": "ROL"
+  },
+  "ROL.10.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ROL-10",
+    "group": "ROL"
+  },
+  "ROL.11.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ROL-11",
+    "group": "ROL"
+  },
+  "ROL.12.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/ROL-12",
+    "group": "ROL"
+  },
+  "RYB.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/RYB-01",
+    "group": "RYB"
+  },
+  "RYB.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/RYB-02",
+    "group": "RYB"
+  },
+  "RYB.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/RYB-03",
+    "group": "RYB"
+  },
+  "SPC.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPC-01",
+    "group": "SPC"
+  },
+  "SPC.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPC-02",
+    "group": "SPC"
+  },
+  "SPC.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPC-03",
+    "group": "SPC"
+  },
+  "SPC.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPC-04",
+    "group": "SPC"
+  },
+  "SPC.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPC-05",
+    "group": "SPC"
+  },
+  "SPC.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPC-06",
+    "group": "SPC"
+  },
+  "SPC.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPC-07",
+    "group": "SPC"
+  },
+  "SPL.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPL-01",
+    "group": "SPL"
+  },
+  "SPL.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPL-02",
+    "group": "SPL"
+  },
+  "SPL.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPL-03",
+    "group": "SPL"
+  },
+  "SPL.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPL-04",
+    "group": "SPL"
+  },
+  "SPL.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPL-05",
+    "group": "SPL"
+  },
+  "SPO.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPO-01",
+    "group": "SPO"
+  },
+  "SPO.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPO-02",
+    "group": "SPO"
+  },
+  "SPO.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPO-03",
+    "group": "SPO"
+  },
+  "SPO.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPO-04",
+    "group": "SPO"
+  },
+  "SPO.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/SPO-05",
+    "group": "SPO"
+  },
+  "TDR.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TDR-01",
+    "group": "TDR"
+  },
+  "TDR.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TDR-02",
+    "group": "TDR"
+  },
+  "TKO.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TKO-01",
+    "group": "TKO"
+  },
+  "TKO.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TKO-02",
+    "group": "TKO"
+  },
+  "TKO.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TKO-03",
+    "group": "TKO"
+  },
+  "TKO.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TKO-04",
+    "group": "TKO"
+  },
+  "TKO.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TKO-05",
+    "group": "TKO"
+  },
+  "TKO.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TKO-06",
+    "group": "TKO"
+  },
+  "TKO.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TKO-07",
+    "group": "TKO"
+  },
+  "TKO.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TKO-08",
+    "group": "TKO"
+  },
+  "TKO.09.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TKO-09",
+    "group": "TKO"
+  },
+  "TKO.10.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TKO-10",
+    "group": "TKO"
+  },
+  "TLO.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TLO-01",
+    "group": "TLO"
+  },
+  "TLO.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TLO-02",
+    "group": "TLO"
+  },
+  "TLO.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TLO-03",
+    "group": "TLO"
+  },
+  "TWO.01.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TWO-01",
+    "group": "TWO"
+  },
+  "TWO.02.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TWO-02",
+    "group": "TWO"
+  },
+  "TWO.03.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TWO-03",
+    "group": "TWO"
+  },
+  "TWO.04.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TWO-04",
+    "group": "TWO"
+  },
+  "TWO.05.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TWO-05",
+    "group": "TWO"
+  },
+  "TWO.06.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TWO-06",
+    "group": "TWO"
+  },
+  "TWO.07.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TWO-07",
+    "group": "TWO"
+  },
+  "TWO.08.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TWO-08",
+    "group": "TWO"
+  },
+  "TWO.09.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TWO-09",
+    "group": "TWO"
+  },
+  "TWO.10.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TWO-10",
+    "group": "TWO"
+  },
+  "TWO.11.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TWO-11",
+    "group": "TWO"
+  },
+  "TWO.12.": {
+    "payUrl": "https://egzaminyzawodowe.org/platnosc/TWO-12",
+    "group": "TWO"
+  }
 }

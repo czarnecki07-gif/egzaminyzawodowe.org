@@ -1,0 +1,1086 @@
+[
+  {
+    "symbol": "AUD.01.",
+    "name": "Przygotowanie i organizacja produkcji audiowizualnej"
+  },
+  {
+    "symbol": "AUD.02.",
+    "name": "Rejestracja, obróbka i publikacja obrazu"
+  },
+  {
+    "symbol": "AUD.03.",
+    "name": "Budowa i renowacja fortepianów i pianin"
+  },
+  {
+    "symbol": "AUD.04.",
+    "name": "Strojenie i korekta fortepianów i pianin"
+  },
+  {
+    "symbol": "AUD.05.",
+    "name": "Realizacja projektów graficznych i multimedialnych"
+  },
+  {
+    "symbol": "AUD.06.",
+    "name": "Obsługa sceny"
+  },
+  {
+    "symbol": "AUD.07.",
+    "name": "Realizacja nagłośnień"
+  },
+  {
+    "symbol": "AUD.08.",
+    "name": "Montaż dźwięku"
+  },
+  {
+    "symbol": "AUD.09.",
+    "name": "Realizacja nagrań dźwiękowych"
+  },
+  {
+    "symbol": "AUD.10.",
+    "name": "Administrowanie dokumentacją w produkcji audiowizualnej"
+  },
+  {
+    "symbol": "AUD.11.",
+    "name": "Realizacja produkcji filmowej techniką animacji"
+  },
+  {
+    "symbol": "BPO.01.",
+    "name": "Zarządzanie bezpieczeństwem w środowisku pracy"
+  },
+  {
+    "symbol": "BPO.02.",
+    "name": "Ochrona osób i mienia"
+  },
+  {
+    "symbol": "BPO.03.",
+    "name": "Wykonywanie działań ratowniczych"
+  },
+  {
+    "symbol": "BPO.04.",
+    "name": "Zarządzanie działaniami ratowniczymi"
+  },
+  {
+    "symbol": "BUD.01.",
+    "name": "Wykonywanie robót zbrojarskich i betoniarskich"
+  },
+  {
+    "symbol": "BUD.02.",
+    "name": "Wykonywanie robót ciesielskich"
+  },
+  {
+    "symbol": "BUD.03.",
+    "name": "Wykonywanie robót dekarsko-blacharskich"
+  },
+  {
+    "symbol": "BUD.04.",
+    "name": "Wykonywanie robót kamieniarskich"
+  },
+  {
+    "symbol": "BUD.05.",
+    "name": "Wykonywanie robót kominiarskich"
+  },
+  {
+    "symbol": "BUD.06.",
+    "name": "Wykonywanie izolacji budowlanych"
+  },
+  {
+    "symbol": "BUD.07.",
+    "name": "Wykonywanie płaszczy ochronnych z blachy, konstrukcji wsporczych i nośnych oraz izolacji przemysłowych"
+  },
+  {
+    "symbol": "BUD.08.",
+    "name": "Montaż konstrukcji budowlanych"
+  },
+  {
+    "symbol": "BUD.09.",
+    "name": "Wykonywanie robót związanych z budową, montażem i eksploatacją sieci oraz instalacji sanitarnych"
+  },
+  {
+    "symbol": "BUD.10.",
+    "name": "Wykonywanie robót związanych z montażem stolarki budowlanej"
+  },
+  {
+    "symbol": "BUD.11.",
+    "name": "Wykonywanie robót montażowych, okładzinowych i wykończeniowych"
+  },
+  {
+    "symbol": "BUD.12.",
+    "name": "Wykonywanie robót murarskich i tynkarskich"
+  },
+  {
+    "symbol": "BUD.13.",
+    "name": "Eksploatacja maszyn i urządzeń do robót ziemnych i drogowych"
+  },
+  {
+    "symbol": "BUD.14.",
+    "name": "Organizacja i kontrola robót budowlanych oraz sporządzanie kosztorysów"
+  },
+  {
+    "symbol": "BUD.15.",
+    "name": "Organizacja robót związanych z budową i utrzymaniem dróg i obiektów inżynierskich oraz sporządzanie kosztorysów"
+  },
+  {
+    "symbol": "BUD.18.",
+    "name": "Wykonywanie pomiarów sytuacyjnych, wysokościowych i realizacyjnych oraz opracowywanie wyników tych pomiarów"
+  },
+  {
+    "symbol": "BUD.19.",
+    "name": "Wykonywanie prac geodezyjnych związanych z katastrem i gospodarką nieruchomościami"
+  },
+  {
+    "symbol": "BUD.20.",
+    "name": "Organizacja robót związanychz budową, montażem i eksploatacją sieci oraz instalacji sanitarnych"
+  },
+  {
+    "symbol": "BUD.21.",
+    "name": "Organizacja i prowadzenie robót związanych z budową obiektów inżynierii środowiska"
+  },
+  {
+    "symbol": "BUD.22.",
+    "name": "Organizacja i prowadzenie robót melioracyjnych"
+  },
+  {
+    "symbol": "BUD.23.",
+    "name": "Wykonywanie i renowacja detali architektonicznych"
+  },
+  {
+    "symbol": "BUD.24.",
+    "name": "Prowadzenie prac renowatorskich elementów architektury"
+  },
+  {
+    "symbol": "BUD.25.",
+    "name": "Organizacja, kontrola i sporządzanie kosztorysów robót wykończeniowych w budownictwie"
+  },
+  {
+    "symbol": "BUD.26.",
+    "name": "Wykonywanie robót zduńskich"
+  },
+  {
+    "symbol": "BUD.27.",
+    "name": "Organizacja i kontrola wykonywania pokryć dachowych oraz sporządzanie kosztorysów"
+  },
+  {
+    "symbol": "BUD.28.",
+    "name": "Organizacja i wykonywanie robót związanych z budową i eksploatacją sieci gazowych"
+  },
+  {
+    "symbol": "BUD.29.",
+    "name": "Organizacja i wykonywanie robót związanych z budową i eksploatacją instalacji gazowych"
+  },
+  {
+    "symbol": "BUD.30.",
+    "name": "Wykonywanie robot związanych z konstrukcją i montażem stoisk targowo-wystawienniczych i scen."
+  },
+  {
+    "symbol": "BUD.31.",
+    "name": "Organizacja i kontrola robót izolacyjnych oraz sporządzanie kosztorysów"
+  },
+  {
+    "symbol": "BUD.32.",
+    "name": "Organizacja i nadzorowanie robót związanych z montażem i automatyką stolarki budowlanej"
+  },
+  {
+    "symbol": "BUD.33.",
+    "name": "Projektowanie, nadzorowanie i organizacja robót związanych z konstrukcją i montażem stoisk targowo--wystawienniczych i scen"
+  },
+  {
+    "symbol": "BUD.34.",
+    "name": "Planowanie i wykonywanie poszczególnych etapów wykończenia wnętrz"
+  },
+  {
+    "symbol": "BUD.36.",
+    "name": "Wykonywanie aranżacji"
+  },
+  {
+    "symbol": "CES.01.",
+    "name": "Eksploatacja maszyn i urządzeń przemysłu ceramicznego"
+  },
+  {
+    "symbol": "CES.02.",
+    "name": "Eksploatacja maszyn i urządzeń przemysłu szklarskiego"
+  },
+  {
+    "symbol": "CES.03.",
+    "name": "Organizacja i kontrolowanie procesów w przemyśle ceramicznym"
+  },
+  {
+    "symbol": "CES.04.",
+    "name": "Organizacja procesów wytwarzania wyrobów ze szkła"
+  },
+  {
+    "symbol": "CES.05.",
+    "name": "Zdobienie wyrobów ceramicznych"
+  },
+  {
+    "symbol": "CHM.01.",
+    "name": "Obsługa maszyn i urządzeń do przetwórstwa tworzyw sztucznych"
+  },
+  {
+    "symbol": "CHM.02.",
+    "name": "Eksploatacja maszyn i urządzeń przemysłu chemicznego"
+  },
+  {
+    "symbol": "CHM.03.",
+    "name": "Przygotowywanie sprzętu, odczynników chemicznych i próbek do badań analitycznych"
+  },
+  {
+    "symbol": "CHM.04.",
+    "name": "Wykonywanie badań analitycznych"
+  },
+  {
+    "symbol": "CHM.05.",
+    "name": "Ocena stanu środowiska, planowanie i realizacja zadań w ochronie środowiska"
+  },
+  {
+    "symbol": "CHM.06.",
+    "name": "Organizacja i kontrolowanie procesów technologicznych w przemyśle chemicznym"
+  },
+  {
+    "symbol": "CHM.07.",
+    "name": "Prowadzenie działań operacyjnych związanych z gospodarką odpadami"
+  },
+  {
+    "symbol": "CHM.08.",
+    "name": "Organizowanie i nadzorowanie prac związanych z gospodarowaniem odpadami"
+  },
+  {
+    "symbol": "DRM.01.",
+    "name": "Wykonywanie wyrobów koszykarsko-plecionkarskich"
+  },
+  {
+    "symbol": "DRM.03.",
+    "name": "Wytwarzanie prostych wyrobów z drewna i materiałów drewnopochodnych"
+  },
+  {
+    "symbol": "DRM.04.",
+    "name": "Wytwarzanie wyrobów z drewna i materiałów drewnopochodnych"
+  },
+  {
+    "symbol": "DRM.05.",
+    "name": "Wykonywanie wyrobów tapicerowanych"
+  },
+  {
+    "symbol": "DRM.06.",
+    "name": "Produkcja mas włóknistych i wytworów papierniczych"
+  },
+  {
+    "symbol": "DRM.07.",
+    "name": "Przetwórstwo wytworów papierniczych"
+  },
+  {
+    "symbol": "DRM.08.",
+    "name": "Organizacja i prowadzenie procesów przetwarzania drewna i materiałów drewnopochodnych"
+  },
+  {
+    "symbol": "DRM.09.",
+    "name": "Obsługa i monitorowanie urządzeń i maszyn sterowanych cyfrowo w produkcji drzewnej"
+  },
+  {
+    "symbol": "DRM.10.",
+    "name": "Planowanie i organizacja procesów zautomatyzowanych w przemyśle drzewnym"
+  },
+  {
+    "symbol": "EKA.01.",
+    "name": "Obsługa klienta w jednostkach administracji"
+  },
+  {
+    "symbol": "EKA.02.",
+    "name": "Organizacja i prowadzenie archiwum"
+  },
+  {
+    "symbol": "EKA.03.",
+    "name": "Opracowywanie materiałów archiwalnych"
+  },
+  {
+    "symbol": "EKA.04.",
+    "name": "Prowadzenie dokumentacji w jednostce organizacyjnej"
+  },
+  {
+    "symbol": "EKA.05.",
+    "name": "Prowadzenie spraw kadrowo-płacowych i gospodarki finansowej jednostek organizacyjnych"
+  },
+  {
+    "symbol": "EKA.06.",
+    "name": "Wykonywanie prac biurowych"
+  },
+  {
+    "symbol": "EKA.07.",
+    "name": "Prowadzenie rachunkowości"
+  },
+  {
+    "symbol": "EKA.08.",
+    "name": "Świadczenie usług pocztowych i finansowych oraz wykonywanie zadań rozdzielczo-ekspedycyjnych"
+  },
+  {
+    "symbol": "EKA.09.",
+    "name": "Obsługa administracyjna i ekonomiczna nieruchomości"
+  },
+  {
+    "symbol": "ELE.01.",
+    "name": "Montaż i obsługa maszyn i urządzeń elektrycznych"
+  },
+  {
+    "symbol": "ELE.02.",
+    "name": "Montaż, uruchamianie i konserwacja instalacji, maszyn i urządzeń elektrycznych"
+  },
+  {
+    "symbol": "ELE.03.",
+    "name": "Wykonywanie robót związanych z montażem instalacji i urządzeń chłodniczych, klimatyzacyjnych oraz pomp ciepła"
+  },
+  {
+    "symbol": "ELE.04.",
+    "name": "Eksploatacja i organizacja robót związanych z montażem instalacji i urządzeń chłodniczych, klimatyzacyjnych oraz pomp ciepła"
+  },
+  {
+    "symbol": "ELE.05.",
+    "name": "Eksploatacja maszyn, urządzeń i instalacji elektrycznych"
+  },
+  {
+    "symbol": "ELE.06.",
+    "name": "Montaż, uruchamianie oraz eksploatacja instalacji i jednostek przesyłowych w systemach energetycznych"
+  },
+  {
+    "symbol": "ELE.07.",
+    "name": "Montaż, uruchamianie oraz eksploatacja instalacji i jednostek wytwórczych w systemach energetycznych"
+  },
+  {
+    "symbol": "ELE.08.",
+    "name": "Montaż urządzeń dźwigowych"
+  },
+  {
+    "symbol": "ELE.09.",
+    "name": "Obsługa i konserwacja urządzeń dźwigowych"
+  },
+  {
+    "symbol": "ELE.10.",
+    "name": "Montaż i uruchamianie urządzeń i systemów energetyki odnawialnej"
+  },
+  {
+    "symbol": "ELE.11.",
+    "name": "Eksploatacja urządzeń i systemów energetyki odnawialnej"
+  },
+  {
+    "symbol": "ELM.01.",
+    "name": "Montaż, uruchamianie i obsługiwanie układów automatyki przemysłowej"
+  },
+  {
+    "symbol": "ELM.02.",
+    "name": "Montaż oraz instalowanie układów i urządzeń elektronicznych"
+  },
+  {
+    "symbol": "ELM.03.",
+    "name": "Montaż, uruchamianie i konserwacja urządzeń i systemów mechatronicznych"
+  },
+  {
+    "symbol": "ELM.04.",
+    "name": "Eksploatacja układów automatyki przemysłowej"
+  },
+  {
+    "symbol": "ELM.05.",
+    "name": "Eksploatacja urządzeń elektronicznych"
+  },
+  {
+    "symbol": "ELM.06.",
+    "name": "Eksploatacja i programowanie urządzeń i systemów mechatronicznych"
+  },
+  {
+    "symbol": "ELM.07.",
+    "name": "Montaż, uruchamianie i obsługa systemów robotyki"
+  },
+  {
+    "symbol": "EML.08.",
+    "name": "Eksploatacja i programowanie systemów robotyki"
+  },
+  {
+    "symbol": "FRK.01.",
+    "name": "Wykonywanie usług fryzjerskich"
+  },
+  {
+    "symbol": "FRK.02.",
+    "name": "Wykonywanie fryzjerskich prac pomocniczych"
+  },
+  {
+    "symbol": "FRK.03.",
+    "name": "Projektowanie i wykonywanie fryzur"
+  },
+  {
+    "symbol": "FRK.04.",
+    "name": "Wykonywanie zabiegów kosmetycznych"
+  },
+  {
+    "symbol": "FRK.05.",
+    "name": "Świadczenie usług w zakresie zabiegów podologicznych"
+  },
+  {
+    "symbol": "GIW.01.",
+    "name": "Eksploatacja otworowa złóż"
+  },
+  {
+    "symbol": "GIW.02.",
+    "name": "Eksploatacja podziemna złóż"
+  },
+  {
+    "symbol": "GIW.03.",
+    "name": "Eksploatacja złóż metodą odkrywkową"
+  },
+  {
+    "symbol": "GIW.04.",
+    "name": "Eksploatacja podziemna kopalin innych niż węgiel kamienny"
+  },
+  {
+    "symbol": "GIW.05.",
+    "name": "Obsługa maszyn i urządzeń do przeróbki mechanicznej kopalin"
+  },
+  {
+    "symbol": "GIW.06.",
+    "name": "Wykonywanie prac geologicznych"
+  },
+  {
+    "symbol": "GIW.07.",
+    "name": "Organizacja i prowadzenie eksploatacji złóż metodą odkrywkową"
+  },
+  {
+    "symbol": "GIW.08.",
+    "name": "Organizacja i prowadzenie eksploatacji otworowej złóż"
+  },
+  {
+    "symbol": "GIW.09.",
+    "name": "Organizacja i prowadzenie eksploatacji podziemnej złóż"
+  },
+  {
+    "symbol": "GIW.10.",
+    "name": "Organizacja i prowadzenie eksploatacji podziemnej kopalin innych niż węgiel kamienny"
+  },
+  {
+    "symbol": "GIW.11.",
+    "name": "Organizacja procesu przeróbki kopalin stałych"
+  },
+  {
+    "symbol": "GIW.12.",
+    "name": "Wykonywanie prac wiertniczych"
+  },
+  {
+    "symbol": "GIW.13.",
+    "name": "Organizacja i prowadzenie prac wiertniczych"
+  },
+  {
+    "symbol": "HAN.01.",
+    "name": "Prowadzenie sprzedaży"
+  },
+  {
+    "symbol": "HAN.02.",
+    "name": "Prowadzenie działań handlowych"
+  },
+  {
+    "symbol": "HAN.03.",
+    "name": "Prowadzenie działalności informacyjno-bibliograficznej"
+  },
+  {
+    "symbol": "HGT.01.",
+    "name": "Wykonywanie usług kelnerskich"
+  },
+  {
+    "symbol": "HGT.02.",
+    "name": "Przygotowanie i wydawanie dań"
+  },
+  {
+    "symbol": "HGT.03.",
+    "name": "Obsługa gości w obiekcie świadczącym usługi hotelarskie"
+  },
+  {
+    "symbol": "HGT.04.",
+    "name": "Wykonywanie prac pomocniczych w obiektach świadczących usługi gastronomiczne"
+  },
+  {
+    "symbol": "HGT.05.",
+    "name": "Wykonywanie prac pomocniczych w obiektach świadczących usługi hotelarskie"
+  },
+  {
+    "symbol": "HGT.06.",
+    "name": "Realizacja usług w recepcji"
+  },
+  {
+    "symbol": "HGT.07.",
+    "name": "Przygotowanie imprez i usług turystycznych"
+  },
+  {
+    "symbol": "HGT.08.",
+    "name": "Obsługa klienta oraz rozliczanie imprez i usług turystycznych"
+  },
+  {
+    "symbol": "HGT.09.",
+    "name": "Prowadzenie działalności turystycznej na obszarach wiejskich"
+  },
+  {
+    "symbol": "HGT.10.",
+    "name": "Prowadzenie gospodarstwa agroturystycznego"
+  },
+  {
+    "symbol": "HGT.11.",
+    "name": "Organizacja usług gastronomicznych"
+  },
+  {
+    "symbol": "HGT.12.",
+    "name": "Organizacja żywienia i usług gastronomicznych"
+  },
+  {
+    "symbol": "INF.01.",
+    "name": "Montaż i utrzymanie torów telekomunikacyjnych oraz urządzeń abonenckich"
+  },
+  {
+    "symbol": "INF.02.",
+    "name": "Administracja i eksploatacja systemów komputerowych, urządzeń peryferyjnych i lokalnych sieci komputerowych"
+  },
+  {
+    "symbol": "INF.03.",
+    "name": "Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych"
+  },
+  {
+    "symbol": "INF.04.",
+    "name": "Projektowanie, programowanie i testowanie aplikacji"
+  },
+  {
+    "symbol": "INF.05.",
+    "name": "Montaż i eksploatacja instalacji wewnątrzbudynkowych telewizji satelitarnej, kablowej i naziemnej"
+  },
+  {
+    "symbol": "INF.06.",
+    "name": "Montaż i eksploatacja szerokopasmowych sieci kablowych pozabudynkowych"
+  },
+  {
+    "symbol": "INF.07.",
+    "name": "Montaż i konfiguracja lokalnych sieci komputerowych oraz administrowanie systemami operacyjnymi"
+  },
+  {
+    "symbol": "INF.08.",
+    "name": "Eksploatacja i konfiguracja oraz administrowanie sieciami rozległymi"
+  },
+  {
+    "symbol": "INF.09.",
+    "name": "Uruchamianie i utrzymanie sieci telekomunikacyjnych"
+  },
+  {
+    "symbol": "INF.10.",
+    "name": "Obsługa oprogramowania i sprzętu informatycznego wspomagających użytkownika z niepełnosprawnością wzrokową"
+  },
+  {
+    "symbol": "LES.01.",
+    "name": "Obsługa maszyn stosowanych w gospodarce leśnej"
+  },
+  {
+    "symbol": "LES.02.",
+    "name": "Gospodarowanie zasobami leśnymi"
+  },
+  {
+    "symbol": "MEC.01.",
+    "name": "Wykonywanie i naprawa wyrobów z blachy i profili kształtowych"
+  },
+  {
+    "symbol": "MEC.02.",
+    "name": "Wykonywanie i naprawa wyrobów kowalskich"
+  },
+  {
+    "symbol": "MEC.03.",
+    "name": "Montaż i obsługa maszyn i urządzeń"
+  },
+  {
+    "symbol": "MEC.04.",
+    "name": "Montaż systemów rurociągowych"
+  },
+  {
+    "symbol": "MEC.05.",
+    "name": "Użytkowanie obrabiarek skrawających"
+  },
+  {
+    "symbol": "MEC.06.",
+    "name": "Montaż i obsługa prostych elementów maszyn i urządzeń"
+  },
+  {
+    "symbol": "MEC.07.",
+    "name": "Wykonywanie i naprawa elementów wyrobów oraz prostych części maszyn, urządzeń i narzędzi"
+  },
+  {
+    "symbol": "MEC.08.",
+    "name": "Wykonywanie i naprawa elementów maszyn, urządzeń i narzędzi"
+  },
+  {
+    "symbol": "MEC.09.",
+    "name": "Organizacja i nadzorowanie procesów produkcji maszyn i urządzeń"
+  },
+  {
+    "symbol": "MEC.10.",
+    "name": "Organizacja i wykonywanie prac spawalniczych"
+  },
+  {
+    "symbol": "MED.01.",
+    "name": "Asystowanie lekarzowi dentyście i utrzymanie gabinetu w gotowości do pracy"
+  },
+  {
+    "symbol": "MED.02.",
+    "name": "Wykonywanie świadczeń stomatologicznych z zakresu profilaktyki i promocji zdrowia jamy ustnej oraz współuczestniczenie w procesie leczenia"
+  },
+  {
+    "symbol": "MED.04.",
+    "name": "Świadczenie usług medycznych w zakresie ortoptyki"
+  },
+  {
+    "symbol": "MED.05.",
+    "name": "Świadczenie usług medycznych w zakresie badania i protezowania słuchu"
+  },
+  {
+    "symbol": "MED.06.",
+    "name": "Wykonywanie i naprawa wyrobów medycznych z zakresu protetyki dentystycznej, ortodoncji oraz epitez twarzy"
+  },
+  {
+    "symbol": "MED.07.",
+    "name": "Montaż i eksploatacja urządzeń elektronicznych i systemów informatyki medycznej"
+  },
+  {
+    "symbol": "MED.08.",
+    "name": "Świadczenie usług medycznych w zakresie diagnostyki obrazowej, elektromedycznej i radioterapii"
+  },
+  {
+    "symbol": "MED.09.",
+    "name": "Sporządzanie i wytwarzanie produktów leczniczych oraz prowadzenie obrotu produktami leczniczymi, wyrobami medycznymi, suplementami diety i środkami spożywczymi specjalnego przeznaczenia żywieniowego oraz innymi produktami dopuszczonymi do obrotu w aptece na podstawie przepisów prawa"
+  },
+  {
+    "symbol": "MED.10.",
+    "name": "Świadczenie usług w zakresie masażu"
+  },
+  {
+    "symbol": "MED.11.",
+    "name": "Wykonywanie i dobieranie przedmiotów ortopedycznych oraz środków pomocniczych"
+  },
+  {
+    "symbol": "MED.12.",
+    "name": "Wykonywanie dekontaminacji sprzętu i wyrobów medycznych"
+  },
+  {
+    "symbol": "MED.13.",
+    "name": "Świadczenie usług w zakresie terapii zajęciowej"
+  },
+  {
+    "symbol": "MED.14.",
+    "name": "Świadczenie usług medyczno-pielęgniarskich i opiekuńczych osobie chorej i niesamodzielnej"
+  },
+  {
+    "symbol": "MEP.01.",
+    "name": "Montaż i naprawa maszyn i urządzeń precyzyjnych"
+  },
+  {
+    "symbol": "MEP.02.",
+    "name": "Montaż i naprawa elementów i układów optycznych"
+  },
+  {
+    "symbol": "MEP.03.",
+    "name": "Wykonywanie i naprawa pomocy wzrokowych"
+  },
+  {
+    "symbol": "MEP.04.",
+    "name": "Naprawa zegarów i zegarków"
+  },
+  {
+    "symbol": "MEP.05.",
+    "name": "Wykonywanie i naprawa wyrobów złotniczych i jubilerskich"
+  },
+  {
+    "symbol": "MOD.01.",
+    "name": "Wyprawianie skór"
+  },
+  {
+    "symbol": "MOD.02.",
+    "name": "Wykonywanie i renowacja wyrobów kaletniczych"
+  },
+  {
+    "symbol": "MOD.03.",
+    "name": "Projektowanie i wytwarzanie wyrobów odzieżowych"
+  },
+  {
+    "symbol": "MOD.04.",
+    "name": "Wykonywanie i renowacja wyrobów kuśnierskich"
+  },
+  {
+    "symbol": "MOD.05.",
+    "name": "Wytwarzanie obuwia"
+  },
+  {
+    "symbol": "MOD.06.",
+    "name": "Wytwarzanie i wykończanie wyrobów włókienniczych"
+  },
+  {
+    "symbol": "MOD.07.",
+    "name": "Wykonywanie prostych wyrobów odzieżowych"
+  },
+  {
+    "symbol": "MOD.08.",
+    "name": "Wytwarzanie, konserwacja i renowacja rękodzielniczych wyrobów włókienniczych"
+  },
+  {
+    "symbol": "MOD.09.",
+    "name": "Organizacja i prowadzenie procesu wyprawy skór"
+  },
+  {
+    "symbol": "MOD.10.",
+    "name": "Organizacja i prowadzenie procesów wytwarzania obuwia"
+  },
+  {
+    "symbol": "MOD.11.",
+    "name": "Organizacja procesów wytwarzania wyrobów odzieżowych"
+  },
+  {
+    "symbol": "MOD.12.",
+    "name": "Organizacja i prowadzenie procesów wytwarzania wyrobów skórzanych"
+  },
+  {
+    "symbol": "MOD.13.",
+    "name": "Projektowanie i organizacja procesów wytwarzania włókienniczych wyrobów dekoracyjnych"
+  },
+  {
+    "symbol": "MOD.14.",
+    "name": "Nadzorowanie procesów wytwarzania i wykończania wyrobów włókienniczych"
+  },
+  {
+    "symbol": "MOD.15.",
+    "name": "Stylizacja ubioru i kreacja wizerunku"
+  },
+  {
+    "symbol": "MOT.01.",
+    "name": "Diagnozowanie i naprawa nadwozi pojazdów samochodowych"
+  },
+  {
+    "symbol": "MOT.02.",
+    "name": "Obsługa, diagnozowanie oraz naprawa mechatronicznych systemów pojazdów samochodowych"
+  },
+  {
+    "symbol": "MOT.03.",
+    "name": "Diagnozowanie i naprawa powłok lakierniczych"
+  },
+  {
+    "symbol": "MOT.04.",
+    "name": "Diagnozowanie, obsługa i naprawa pojazdów motocyklowych"
+  },
+  {
+    "symbol": "MOT.05.",
+    "name": "Obsługa, diagnozowanie oraz naprawa pojazdów samochodowych"
+  },
+  {
+    "symbol": "MOT.06.",
+    "name": "Organizacja i prowadzenie procesu obsługi pojazdów samochodowych"
+  },
+  {
+    "symbol": "MOT.07.",
+    "name": "Organizacja i prowadzenie procesu obsługi i naprawy pojazdów zeroemisyjnych i niskoemisyjnych"
+  },
+  {
+    "symbol": "MTL.01.",
+    "name": "Wykonywanie i naprawa oprzyrządowania odlewniczego"
+  },
+  {
+    "symbol": "MTL.02.",
+    "name": "Eksploatacja maszyn i urządzeń odlewniczych"
+  },
+  {
+    "symbol": "MTL.03.",
+    "name": "Eksploatacja maszyn i urządzeń przemysłu metalurgicznego"
+  },
+  {
+    "symbol": "MTL.04.",
+    "name": "Organizacja i nadzorowanie procesu odlewniczego"
+  },
+  {
+    "symbol": "MTL.05.",
+    "name": "Organizacja i prowadzenie procesów metalurgicznych"
+  },
+  {
+    "symbol": "OGR.01.",
+    "name": "Wykonywanie kompozycji florystycznych"
+  },
+  {
+    "symbol": "OGR.02.",
+    "name": "Zakładanie i prowadzenie upraw ogrodniczych"
+  },
+  {
+    "symbol": "OGR.03.",
+    "name": "Projektowanie, urządzanie i pielęgnacja roślinnych obiektów architektury krajobrazu"
+  },
+  {
+    "symbol": "OGR.04.",
+    "name": "Organizacja prac związanych z budową oraz konserwacją obiektów małej architektury krajobrazu"
+  },
+  {
+    "symbol": "OGR.05.",
+    "name": "Planowanie i organizacja prac ogrodniczych"
+  },
+  {
+    "symbol": "PGF.01.",
+    "name": "Realizacja procesów drukowania z użyciem fleksograficznych form drukowych"
+  },
+  {
+    "symbol": "PGF.02.",
+    "name": "Realizacja procesów drukowania z offsetowych form drukowych"
+  },
+  {
+    "symbol": "PGF.03.",
+    "name": "Realizacja procesów introligatorskich i opakowaniowych"
+  },
+  {
+    "symbol": "PGF.04.",
+    "name": "Przygotowywanie oraz wykonywanie prac graficznych i publikacji cyfrowych"
+  },
+  {
+    "symbol": "PGF.05.",
+    "name": "Drukowanie cyfrowe i obróbka druków"
+  },
+  {
+    "symbol": "PGF.06.",
+    "name": "Planowanie i kontrola produkcji poligraficznej"
+  },
+  {
+    "symbol": "PGF.07.",
+    "name": "Wykonywanie przekazu reklamowego"
+  },
+  {
+    "symbol": "PGF.08.",
+    "name": "Zarządzanie kampanią reklamową"
+  },
+  {
+    "symbol": "PGF.09.",
+    "name": "Organizacja i zarządzanie przedsiębiorstwem rynku książki oraz relacjami z klientami"
+  },
+  {
+    "symbol": "ROL.01.",
+    "name": "Jeździectwo i trening koni"
+  },
+  {
+    "symbol": "ROL.02.",
+    "name": "Eksploatacja pojazdów, maszyn, urządzeń i narzędzi stosowanych w rolnictwie"
+  },
+  {
+    "symbol": "ROL.03.",
+    "name": "Prowadzenie produkcji pszczelarskiej"
+  },
+  {
+    "symbol": "ROL.04.",
+    "name": "Prowadzenie produkcji rolniczej"
+  },
+  {
+    "symbol": "ROL.05.",
+    "name": "Organizacja i prowadzenie przedsiębiorstwa w agrobiznesie"
+  },
+  {
+    "symbol": "ROL.06.",
+    "name": "Organizacja chowu i hodowli koni"
+  },
+  {
+    "symbol": "ROL.07.",
+    "name": "Szkolenie i użytkowanie koni"
+  },
+  {
+    "symbol": "ROL.08.",
+    "name": "Eksploatacja systemów mechatronicznych w rolnictwie"
+  },
+  {
+    "symbol": "ROL.09.",
+    "name": "Organizacja i nadzorowanie produkcji rolniczej i pszczelarskiej"
+  },
+  {
+    "symbol": "ROL.10.",
+    "name": "Organizacja i nadzorowanie produkcji rolniczej"
+  },
+  {
+    "symbol": "ROL.11.",
+    "name": "Prowadzenie chowu i inseminacji zwierząt"
+  },
+  {
+    "symbol": "ROL.12.",
+    "name": "Wykonywanie weterynaryjnych czynności pomocniczych"
+  },
+  {
+    "symbol": "RYB.01.",
+    "name": "Wykonywanie prac rybackich w akwakulturze oraz rybackie użytkowanie wód śródlądowych"
+  },
+  {
+    "symbol": "RYB.02.",
+    "name": "Organizacja prac rybackich w akwakulturze i w rybackim użytkowaniu wód śródlądowych"
+  },
+  {
+    "symbol": "RYB.03.",
+    "name": "Pełnienie wachty morskiej i portowej na statku rybackim"
+  },
+  {
+    "symbol": "SPC.01.",
+    "name": "Produkcja wyrobów cukierniczych"
+  },
+  {
+    "symbol": "SPC.02.",
+    "name": "Produkcja wyrobów spożywczych z wykorzystaniem maszyn i urządzeń"
+  },
+  {
+    "symbol": "SPC.03.",
+    "name": "Produkcja wyrobów piekarskich"
+  },
+  {
+    "symbol": "SPC.04.",
+    "name": "Produkcja przetworów mięsnych i tłuszczowych"
+  },
+  {
+    "symbol": "SPC.05.",
+    "name": "Obróbka ryb i produkcja przetworów rybnych"
+  },
+  {
+    "symbol": "SPC.06.",
+    "name": "Organizacja i nadzorowanie produkcji wyrobów mleczarskich"
+  },
+  {
+    "symbol": "SPC.07.",
+    "name": "Organizacja i nadzorowanie produkcji wyrobów spożywczych"
+  },
+  {
+    "symbol": "SPL.01.",
+    "name": "Obsługa magazynów"
+  },
+  {
+    "symbol": "SPL.02.",
+    "name": "Obsługa podróżnych w portach i terminalach"
+  },
+  {
+    "symbol": "SPL.03.",
+    "name": "Obsługa ładunków w portach i terminalach"
+  },
+  {
+    "symbol": "SPL.04.",
+    "name": "Organizacja transportu"
+  },
+  {
+    "symbol": "SPL.05.",
+    "name": "Organizacja transportu oraz obsługa klientów i kontrahentów"
+  },
+  {
+    "symbol": "SPO.01.",
+    "name": "Udzielanie pomocy i organizacja wsparcia osobie niepełnosprawnej"
+  },
+  {
+    "symbol": "SPO.02.",
+    "name": "Świadczenie usług opiekuńczo-wspierających osobie starszej"
+  },
+  {
+    "symbol": "SPO.03.",
+    "name": "Świadczenie usług opiekuńczo-wspierających osobie podopiecznej"
+  },
+  {
+    "symbol": "SPO.04.",
+    "name": "Świadczenie usług opiekuńczych i wspomagających rozwój dziecka"
+  },
+  {
+    "symbol": "SPO.05.",
+    "name": "Świadczenie usług opiekuńczych"
+  },
+  {
+    "symbol": "TDR.01.",
+    "name": "Eksploatacja środków transportu drogowego"
+  },
+  {
+    "symbol": "TDR.02.",
+    "name": "Organizacja przewozu środkami transportu drogowego"
+  },
+  {
+    "symbol": "TKO.01.",
+    "name": "Wykonywanie i utrzymywanie nawierzchni kolejowej i podtorza"
+  },
+  {
+    "symbol": "TKO.02.",
+    "name": "Montaż i eksploatacja urządzeń i systemów sterowania ruchem kolejowym"
+  },
+  {
+    "symbol": "TKO.03.",
+    "name": "Organizacja robót związanych z budową i utrzymaniem dróg kolejowych"
+  },
+  {
+    "symbol": "TKO.04.",
+    "name": "Organizacja robót związanych z budową i utrzymaniem kolejowych obiektów inżynieryjnych oraz podstawy kosztorysowania"
+  },
+  {
+    "symbol": "TKO.05.",
+    "name": "Montaż i eksploatacja sieci zasilających oraz trakcji elektrycznej"
+  },
+  {
+    "symbol": "TKO.06.",
+    "name": "Montaż i eksploatacja środków transportu szynowego"
+  },
+  {
+    "symbol": "TKO.07.",
+    "name": "Organizacja i prowadzenie ruchu pociągów"
+  },
+  {
+    "symbol": "TKO.08.",
+    "name": "Planowanie i realizacja przewozów kolejowych"
+  },
+  {
+    "symbol": "TKO.09.",
+    "name": "Wykonywanie robót związanych z utrzymaniem i naprawą pojazdów kolejowych"
+  },
+  {
+    "symbol": "TKO.10.",
+    "name": "Eksploatacja i utrzymanie pojazdów kolejowych"
+  },
+  {
+    "symbol": "TLO.01.",
+    "name": "Wykonywanie obsługi technicznej wyposażenia awionicznego i elektrycznego statków powietrznych"
+  },
+  {
+    "symbol": "TLO.02.",
+    "name": "Obsługa operacyjna portu lotniczego i współpraca ze służbami żeglugi powietrznej"
+  },
+  {
+    "symbol": "TLO.03.",
+    "name": "Wykonywanie obsługi technicznej płatowca i jego instalacji oraz zespołu napędowego statków powietrznych"
+  },
+  {
+    "symbol": "TWO.01.",
+    "name": "Wykonywanie robót regulacyjnych i hydrotechnicznych"
+  },
+  {
+    "symbol": "TWO.02.",
+    "name": "Montaż konstrukcji i wyposażenia jachtów i łodzi"
+  },
+  {
+    "symbol": "TWO.03.",
+    "name": "Wykonywanie i montaż elementów kadłuba jednostek pływających"
+  },
+  {
+    "symbol": "TWO.04.",
+    "name": "Organizacja robót związanych z regulacją cieków naturalnych oraz budową urządzeń wodnych"
+  },
+  {
+    "symbol": "TWO.05.",
+    "name": "Organizacja budowy, remontu i modernizacji kadłuba jednostek pływających"
+  },
+  {
+    "symbol": "TWO.06.",
+    "name": "Organizacja i wykonywanie prac związanych z eksploatacją maszyn, urządzeń i instalacji okrętowych"
+  },
+  {
+    "symbol": "TWO.07.",
+    "name": "Pełnienie wachty morskiej i portowej"
+  },
+  {
+    "symbol": "TWO.08.",
+    "name": "Planowanie i prowadzenie żeglugi po śródlądowych drogach wodnych i morskich wodach wewnętrznych"
+  },
+  {
+    "symbol": "TWO.09.",
+    "name": "Obsługa siłowni statkowych, urządzeń pomocniczych i mechanizmów pokładowych"
+  },
+  {
+    "symbol": "TWO.10.",
+    "name": "Montaż i uruchamianie systemów automatyki okrętowej"
+  },
+  {
+    "symbol": "TWO.11.",
+    "name": "Wykonywanie i organizacja prac związanych z eksploatacją systemów automatyki okrętowej"
+  },
+  {
+    "symbol": "TWO.12.",
+    "name": "Organizacja budowy, remontu i modernizacji jachtów i łodzi"
+  }
+]

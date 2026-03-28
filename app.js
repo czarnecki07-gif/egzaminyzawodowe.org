@@ -2,6 +2,7 @@
    Działa z:
    - exams.json: lista obiektów, gdzie symbol/nazwa mogą mieć różne klucze (symbol/Symbol/code/Kod itd.)
    - courses.json: object mapa (klucz=symbol) lub lista
+   - courses-index.json + /courses/*.json — generowane kursy
    Wymaga w HTML: #q, #group, #sort, #count, #grid
 */
 
@@ -40,11 +41,9 @@
 
   function getAny(obj, candidates) {
     if (!obj || typeof obj !== 'object') return '';
-    // 1) dokładne trafienie
     for (const k of candidates) {
       if (k in obj && safe(obj[k])) return safe(obj[k]);
     }
-    // 2) case-insensitive
     const lowerMap = new Map(Object.keys(obj).map(k => [k.toLowerCase(), k]));
     for (const k of candidates) {
       const real = lowerMap.get(k.toLowerCase());
@@ -55,10 +54,8 @@
 
   function guessGroupFromSymbol(symbol) {
     const s = normalizeSymbol(symbol);
-    // INF.02 -> INF
     let m = s.match(/^([A-Z]{2,6})\./);
     if (m) return m[1];
-    // gdy nie ma kropki: INF02 -> INF
     m = s.match(/^([A-Z]{2,6})/);
     if (m) return m[1];
     return 'INNE';
@@ -70,12 +67,65 @@
     return await res.json();
   }
 
+  // ============================
+  // WCZYTYWANIE KURSÓW Z /courses/
+  // ============================
+
+  async function loadGeneratedCourses() {
+    try {
+      const indexRes = await fetch("courses-index.json", { cache: "no-store" });
+      if (!indexRes.ok) return [];
+
+      const files = await indexRes.json();
+      const loaded = [];
+
+      for (const file of files) {
+        try {
+          const res = await fetch(`courses/${file}`, { cache: "no-store" });
+          if (!res.ok) continue;
+
+          const course = await res.json();
+          const symbol = normalizeSymbol(course.symbol);
+          const name = safe(course.name);
+
+          if (!symbol || !name) continue;
+
+          loaded.push({
+            symbol,
+            name,
+            group: guessGroupFromSymbol(symbol),
+            courseUrl: `courses/${file}`,
+            ...course
+          });
+
+        } catch (e) {
+          console.error("Błąd wczytywania kursu:", file);
+        }
+      }
+
+      return loaded;
+
+    } catch (e) {
+      console.error("Nie można wczytać courses-index.json");
+      return [];
+    }
+  }
+
+  // ============================
+  // STAN APLIKACJI
+  // ============================
+
   const state = {
     exams: [],
     coursesBySymbol: new Map(),
+    generatedCourses: [],
     groups: new Set(),
     filtered: [],
   };
+
+  // ============================
+  // BUDOWANIE SELECTA BRANŻ
+  // ============================
 
   function buildGroupSelect(groups) {
     const current = groupEl.value || 'all';
@@ -93,11 +143,15 @@
     if ([...groupEl.options].some(o => o.value === current)) groupEl.value = current;
   }
 
+  // ============================
+  // FILTROWANIE + SORTOWANIE
+  // ============================
+
   function compute() {
     const q = norm(qEl.value);
     const selectedGroup = safe(groupEl.value);
 
-    let out = state.exams.slice();
+    let out = [...state.exams, ...state.generatedCourses];
 
     if (selectedGroup !== 'all') {
       out = out.filter((e) => (e.group || guessGroupFromSymbol(e.symbol)) === selectedGroup);
@@ -118,6 +172,10 @@
     state.filtered = out;
   }
 
+  // ============================
+  // RENDEROWANIE KAFELKÓW
+  // ============================
+
   function render() {
     const items = state.filtered;
 
@@ -133,8 +191,8 @@
 
       const course = state.coursesBySymbol.get(symbol);
 
-      // 1) kurs (gdy już będzie), 2) płatność, 3) fallback pod SEO
       const href =
+        ex.courseUrl || // kurs z /courses/
         course?.courseUrl ||
         course?.course_url ||
         course?.payUrl ||
@@ -170,26 +228,34 @@
     }
   }
 
+  // ============================
+  // BŁĘDY
+  // ============================
+
   function showError(msg) {
     gridEl.innerHTML = `
       <div class="note">
         <strong>Błąd:</strong> ${escapeHtml(msg)}
         <div class="muted" style="margin-top:8px;">
           Sprawdź czy w tym samym katalogu co <code>index.html</code> są pliki
-          <code>exams.json</code> i <code>courses.json</code>.
+          <code>exams.json</code>, <code>courses.json</code> i <code>courses-index.json</code>.
         </div>
       </div>
     `;
   }
 
+  // ============================
+  // INIT
+  // ============================
+
   async function init() {
     try {
-      const [examsRaw, coursesRaw] = await Promise.all([
+      const [examsRaw, coursesRaw, generated] = await Promise.all([
         loadJson('./exams.json'),
         loadJson('./courses.json'),
+        loadGeneratedCourses()
       ]);
 
-      // exams.json może być array albo {exams:[...]}
       const examsArr = Array.isArray(examsRaw) ? examsRaw : (examsRaw?.exams || []);
       state.exams = examsArr.map((e) => {
         const symbol = normalizeSymbol(getAny(e, [
@@ -202,7 +268,6 @@
         return { symbol, name, group };
       }).filter(x => x.symbol && x.name);
 
-      // courses.json: object mapa (klucz=symbol) lub lista
       state.coursesBySymbol.clear();
       if (Array.isArray(coursesRaw)) {
         for (const c of coursesRaw) {
@@ -216,9 +281,12 @@
         }
       }
 
-      // grupy do selecta
+      state.generatedCourses = generated;
+
       state.groups.clear();
-      for (const ex of state.exams) state.groups.add(ex.group || guessGroupFromSymbol(ex.symbol));
+      for (const ex of [...state.exams, ...state.generatedCourses]) {
+        state.groups.add(ex.group || guessGroupFromSymbol(ex.symbol));
+      }
 
       buildGroupSelect(state.groups);
       compute();

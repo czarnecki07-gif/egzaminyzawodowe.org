@@ -147,10 +147,22 @@ Return ONLY valid JSON, no comments, no extra text.
     const data = await response.json();
     const jsonText = data.choices[0].message.content;
 
-    resultBox.textContent = jsonText;
+    // Nazwa pliku kursu
+    const fileName = `${symbol}.json`;
+
+    // Podpowiedź do courses-index.json
+    const hint = `
+---------------------------------------
+Dodaj do courses-index.json na stronie:
+"${fileName}"
+---------------------------------------
+`;
+
+    resultBox.textContent = jsonText + "\n\n" + hint;
     downloadBtn.classList.remove("hidden");
 
     window.generatedJSON = jsonText;
+    window.generatedFileName = fileName;
 
   } catch (err) {
     resultBox.textContent = "Błąd podczas generowania kursu.";
@@ -170,8 +182,7 @@ function downloadJSON() {
   const a = document.createElement("a");
   a.href = url;
 
-  const symbol = document.getElementById("symbol").value.trim();
-  a.download = `${symbol}.json`;
+  a.download = window.generatedFileName || "kurs.json";
 
   a.click();
   URL.revokeObjectURL(url);

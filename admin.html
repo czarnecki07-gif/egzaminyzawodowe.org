@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Panel administratora — Generator kursów</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 40px;
+    }
+    .login-box, .panel {
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    button {
+      padding: 12px 20px;
+      background: #0078ff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #005fcc;
+    }
+    .hidden {
+      display: none;
+    }
+    .result-box {
+      white-space: pre-wrap;
+      background: #222;
+      color: #0f0;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      font-family: monospace;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- LOGOWANIE -->
+  <div id="loginBox" class="login-box">
+    <h2>Logowanie do panelu administratora</h2>
+    <p>Podaj hasło, aby uzyskać dostęp.</p>
+    <input type="password" id="passwordInput" placeholder="Hasło" />
+    <button onclick="login()">Zaloguj</button>
+    <p id="loginError" style="color:red; display:none;">Nieprawidłowe hasło.</p>
+  </div>
+
+  <!-- PANEL ADMINA -->
+  <div id="adminPanel" class="panel hidden">
+    <h2>Generator kursów</h2>
+
+    <label>Język kursu:</label>
+    <label><input type="radio" name="lang" value="pl" checked> Polski</label>
+    <label><input type="radio" name="lang" value="en"> English</label>
+
+    <label>Tryb generowania:</label>
+    <label><input type="radio" name="mode" value="fixed" checked> 5 modułów × 5 lekcji</label>
+    <label><input type="radio" name="mode" value="auto"> Automatyczna struktura (AI dobiera)</label>
+
+    <label>Symbol kwalifikacji:</label>
+    <input type="text" id="symbol" placeholder="np. INF.02." />
+
+    <label>Nazwa kursu:</label>
+    <input type="text" id="courseName" placeholder="np. Administracja systemami komputerowymi" />
+
+    <label>Podstawa programowa:</label>
+    <textarea id="podstawa" rows="6" placeholder="Wklej podstawę programową"></textarea>
+
+    <label>Opis kursu:</label>
+    <textarea id="description" rows="4" placeholder="Krótki opis kursu"></textarea>
+
+    <button onclick="generateCourse()">GENERUJ KURS</button>
+
+    <div id="result" class="result-box hidden"></div>
+    <button id="downloadBtn" class="hidden" onclick="downloadJSON()">POBIERZ JSON</button>
+  </div>
+
+  <script src="admin.js"></script>
+
+</body>
+</html>

@@ -4,7 +4,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Panel administratora — Generator kursów</title>
-  <link rel="stylesheet" href="style.css" />
 
   <style>
     body {
@@ -14,7 +13,7 @@
       padding: 40px;
     }
     .login-box, .panel {
-      max-width: 600px;
+      max-width: 700px;
       margin: 40px auto;
       background: white;
       padding: 30px;
@@ -72,13 +71,15 @@
   <div id="adminPanel" class="panel hidden">
     <h2>Generator kursów</h2>
 
-    <label>Język kursu:</label>
-    <label><input type="radio" name="lang" value="pl" checked> Polski</label>
+    <h3>Język kursu</h3>
+    <label><input type="radio" name="lang" value="pl" checked> Polski</label><br>
     <label><input type="radio" name="lang" value="en"> English</label>
 
-    <label>Tryb generowania:</label>
-    <label><input type="radio" name="mode" value="fixed" checked> 5 modułów × 5 lekcji</label>
+    <h3>Tryb generowania</h3>
+    <label><input type="radio" name="mode" value="fixed" checked> 5 modułów × 5 lekcji</label><br>
     <label><input type="radio" name="mode" value="auto"> Automatyczna struktura (AI dobiera)</label>
+
+    <h3>Dane kursu</h3>
 
     <label>Symbol kwalifikacji:</label>
     <input type="text" id="symbol" placeholder="np. INF.02." />
